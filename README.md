@@ -12,7 +12,6 @@ Pain Point, *dann* das Werkzeug.
 | Projekt | Sektor | Was es tut | Datenquelle |
 |---|---|---|---|
 | [**energie-planer-mcp**](energie-planer-mcp/) | Energy & Environment | legt energieintensive Lasten in die **günstigsten Börsen-Stromstunden** | aWATTar-API (öffentlich, ohne Key) |
-| [**firmenbuch-mcp**](firmenbuch-mcp/) | Public / Finance | österr. **Firmenbuch-Recherche**: Jahresabschlüsse laden + Bilanz auslesen | openfirmenbuch.at (öffentliche Daten) |
 
 ---
 
@@ -28,7 +27,7 @@ Pain Point, *dann* das Werkzeug.
 
 ## Tech
 
-Node.js (ESM), `@modelcontextprotocol/sdk`, `zod`, Playwright (nur firmenbuch).
+Node.js (ESM), `@modelcontextprotocol/sdk`, `zod`.
 Transport: **stdio** (lokal) — produktionsreif als HTTP-Server hostbar.
 
 ## Schnellstart (pro Projekt)
