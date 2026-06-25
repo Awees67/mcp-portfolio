@@ -1,0 +1,20 @@
+{
+  "name": "energie-planer-mcp",
+  "version": "1.0.0",
+  "description": "MCP-Server: legt Speicher-Ladung & verschiebbare Lasten in die guenstigsten Boersen-Stromstunden (aWATTar). Use-Case-getrieben (Forward-Deployed-Szenario).",
+  "type": "module",
+  "bin": { "energie-planer-mcp": "energie-planer-mcp.mjs" },
+  "files": ["energie-planer-mcp.mjs", "README.md", "docs/"],
+  "scripts": {
+    "mcp": "node energie-planer-mcp.mjs",
+    "smoke": "node _smoke.mjs"
+  },
+  "keywords": ["mcp", "model-context-protocol", "energy", "strompreise", "awattar", "ai-tools", "load-shifting"],
+  "author": "Andi (Awees67)",
+  "license": "MIT",
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
+  }
+}

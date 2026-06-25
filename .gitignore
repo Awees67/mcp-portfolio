@@ -1,0 +1,13 @@
+# Abhängigkeiten
+node_modules/
+
+# Gescrapte Daten / lokale Outputs NIE veröffentlichen
+output/
+
+# Temporäres
+*.log
+.env
+.DS_Store
+Thumbs.db
+_smoke-*.mjs
+_fix-paths.mjs
