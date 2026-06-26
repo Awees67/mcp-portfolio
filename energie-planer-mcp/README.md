@@ -85,5 +85,6 @@ Schichtleiter ──(Sprache)──► KI (Claude) ──(Werkzeug-Aufruf)──
   HTTP-Server hostbar (Produktion).
 - Node ≥18 (globales `fetch`). Abhängigkeiten: nur SDK + zod.
 
-*Hinweis: Demo-Projekt für ein Portfolio. Die Day-Ahead-Preise von morgen sind i.d.R. erst
-ab ca. 13:00 verfügbar — davor liefert `tag: "heute"` Daten.*
+*Hinweis: Das Szenario ist ein realistischer, fiktiver Fall (Demonstration). Die
+Day-Ahead-Preise von morgen sind i.d.R. erst ab ca. 13:00 verfügbar — davor liefert
+`tag: "heute"` Daten.*

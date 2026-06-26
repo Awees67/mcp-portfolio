@@ -72,9 +72,9 @@ Schichtleiter  ──(normale Sprache)──►  KI (Claude)
 
 ---
 
-## Produktions-Überlegungen (für das Bewerbungsgespräch)
+## Produktions-Überlegungen
 
-- v1 läuft **lokal (stdio)** — richtig für Demo/Portfolio.
+- v1 läuft **lokal (stdio)** — richtig für die erste, fokussierte Iteration.
 - In **Produktion** beim Kunden: als **HTTP-Server** auf einem Host (24/7), mit
   Token-Auth, Logging, und Anbindung an die reale Last-/Speicher-Steuerung.
 - Rechtlich sauber, da öffentliche API mit erlaubter Nutzung.
