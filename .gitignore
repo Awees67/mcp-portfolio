@@ -4,6 +4,10 @@ node_modules/
 # Gescrapte Daten / lokale Outputs NIE veröffentlichen
 output/
 
+# Generierte/echte Datenbanken (mit `node ingest.mjs` neu erzeugbar)
+*.db
+*.db-journal
+
 # Temporäres
 *.log
 .env

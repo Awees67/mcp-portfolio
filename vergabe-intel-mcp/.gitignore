@@ -1,0 +1,8 @@
+node_modules/
+# generierte Demo-Datenbank (mit `node seed.mjs` neu erzeugbar)
+vergabe.db
+*.db-journal
+*.log
+.env
+.DS_Store
+Thumbs.db

@@ -1,0 +1,9 @@
+# Was NICHT in die Kiste soll:
+node_modules        # wird in der Kiste frisch installiert
+.git
+*.log
+_*.mjs              # Test-/Hilfsdateien (z.B. _smoke.mjs)
+Dockerfile
+.dockerignore
+# vergabe.db wird BEWUSST mitgenommen, damit die Demo-Kiste echte Daten hat.
+# (In Produktion käme die DB extern aus PostgreSQL — dann hier ausschließen.)

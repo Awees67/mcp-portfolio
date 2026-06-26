@@ -12,6 +12,7 @@ Pain Point, *dann* das Werkzeug.
 | Projekt | Sektor | Was es tut | Datenquelle |
 |---|---|---|---|
 | [**energie-planer-mcp**](energie-planer-mcp/) | Energy & Environment | legt energieintensive Lasten in die **günstigsten Börsen-Stromstunden** | aWATTar-API (öffentlich, ohne Key) |
+| [**vergabe-intel-mcp**](vergabe-intel-mcp/) | Public & Infrastructure / Energy | durchsucht, aggregiert & priorisiert **tausende öffentliche Ausschreibungen** — Enterprise: DB, Pagination, Token-Auth, Docker | **EU-TED-API** (offiziell, echte Daten) |
 
 ---
 
@@ -27,8 +28,8 @@ Pain Point, *dann* das Werkzeug.
 
 ## Tech
 
-Node.js (ESM), `@modelcontextprotocol/sdk`, `zod`.
-Transport: **stdio** (lokal) — produktionsreif als HTTP-Server hostbar.
+Node.js (ESM), `@modelcontextprotocol/sdk`, `zod`, SQLite (`node:sqlite`), Express.
+Transport: **stdio** (Demo) *und* **HTTP + Token-Auth** (Produktion, umgesetzt in `vergabe-intel-mcp`); per **Docker** deploybar.
 
 ## Schnellstart (pro Projekt)
 
