@@ -29,7 +29,7 @@ Pain Point, *dann* das Werkzeug.
 ## Tech
 
 Node.js (ESM), `@modelcontextprotocol/sdk`, `zod`, SQLite (`node:sqlite`), Express.
-Transport: **stdio** (Demo) *und* **HTTP + Token-Auth** (Produktion, umgesetzt in `vergabe-intel-mcp`); per **Docker** deploybar.
+Transport: **stdio** (lokal) *und* **HTTP + Token-Auth** (Produktion, umgesetzt in `vergabe-intel-mcp`); per **Docker** deploybar.
 
 ## Schnellstart (pro Projekt)
 

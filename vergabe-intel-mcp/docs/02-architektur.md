@@ -12,7 +12,7 @@ KI-Agent ──(Werkzeug-Aufruf)──► vergabe-intel-mcp ──(read-only, pa
                                                                                    TED / Kunden-ERP)
 ```
 
-Kernidee, die ein Spielzeug-MCP von einem Enterprise-MCP trennt: **Daten werden EINMAL
+Kernidee, die einen einfachen von einem produktionsreifen MCP-Server trennt: **Daten werden EINMAL
 ingestiert und liegen in einer Datenbank** — Abfragen sind dann schnell und beliebig oft,
 statt bei jeder Frage alles neu zu holen.
 
@@ -60,9 +60,9 @@ macht der **Agent** mit den gelieferten Fakten.
 | `vergabe_statistik` | Aggregation nach Land/Sektor/Status |
 | `vergabe_match` | Relevanz-Scoring gegen ein Organisationsprofil (+ Begründung) |
 
-## 5. Von der Demo zur Produktion
+## 5. Von der lokalen Entwicklung zur Produktion
 
-| Aspekt | Demo (dieses Repo) | Produktion beim Kunden |
+| Aspekt | Dieses Repo (lokal) | Produktion beim Kunden |
 |---|---|---|
 | Daten | **echter Feed: EU-TED-API** (`ingest.mjs`) | zusätzlich Kunden-ERP, häufigerer Ingest |
 | Transport | stdio (lokal) | **HTTP + Token-Auth**, gehostet 24/7 |

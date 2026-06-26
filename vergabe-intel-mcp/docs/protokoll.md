@@ -80,6 +80,6 @@ ist mit `node ingest.mjs` jederzeit aus der Live-TED-API neu befüllbar.
 
 ## 9. Nächste Schritte
 
-- Aufnahme ins GitHub-Portfolio (`mcp-portfolio`).
+- Veröffentlichung als Open-Source-Repository.
 - Produktion: zusätzlich **Kunden-ERP** als Quelle, **HTTP-Transport + Token-Auth**,
   gehostete DB (Postgres), Monitoring/Alerting/Audit-Log — bei **gleichem Werkzeug-Code**.

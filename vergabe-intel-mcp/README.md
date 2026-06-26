@@ -2,7 +2,7 @@
 
 > **Vergabe-Intelligence:** Ein KI-Agent durchsucht, aggregiert und priorisiert
 > **tausende öffentliche Ausschreibungen** für eine große Organisation. Datenbank-gestützt,
-> paginiert, injection-sicher — gebaut wie ein echtes Produkt, nicht wie ein Demo-Skript.
+> paginiert, injection-sicher und produktionsnah aufgebaut.
 
 ---
 
@@ -65,7 +65,7 @@ KI-Agent → vergabe-intel-mcp → (read-only, parametrisiert) → SQLite-DB
 
 ### Produktions-Weg (gebaut & getestet)
 
-Neben dem stdio-Weg (Demo) ist der Produktions-Weg umgesetzt:
+Neben dem stdio-Weg (lokale Entwicklung) ist der Produktions-Weg umgesetzt:
 
 - **HTTP-Server mit URL:** `node vergabe-intel-http.mjs` → erreichbar unter `http://localhost:3000/mcp`
 - **Token-Schloss:** `/mcp` verlangt `Authorization: Bearer <MCP_TOKEN>`. Das Token kommt von außen (Umgebungsvariable), nicht aus dem Code — ohne/falsches Token → **401**.
@@ -79,7 +79,7 @@ Neben dem stdio-Weg (Demo) ist der Produktions-Weg umgesetzt:
   docker run -p 3000:3000 -e MCP_TOKEN=<TOKEN> vergabe-intel
   ```
 
-stdio (lokal) für die Demo; in Produktion HTTP + Token-Auth, gehostete DB (Postgres), Monitoring —
+stdio (lokal) für die Entwicklung; in Produktion HTTP + Token-Auth, gehostete DB (Postgres), Monitoring —
 **derselbe Werkzeug-Code**, siehe `docs/02-architektur.md`.
 
 ---
